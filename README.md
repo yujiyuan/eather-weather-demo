@@ -1,1 +1,3 @@
 # eather-weather-demo
+
+只有一个页面的demo，简单获取厦门市当前时间的天气及未来几个阶段的天气情况。使用flex布局。axios获取数据。天气接口是使用openweathermap提供的免费API

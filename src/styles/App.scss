@@ -1,0 +1,98 @@
+
+.weather-app{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/BG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    .now-weather-info {
+        padding-left: 35px;
+        margin-bottom: 31px;
+        .city {
+            position: absolute;
+            top: 40px;
+            right: 45px;
+            font-size: 67px;
+            color: #fff;
+        }
+        .weather-icon {
+        padding-top: 166px;
+            >img {
+                width: 119px;
+                height: 98px;
+                    vertical-align: bottom;
+            }
+            >span {
+                font-size: 36px;
+                margin-left: 20px;
+                color: #fff;
+            }
+        }
+        .temperature {
+            font-size: 80px;
+            color: #fff;
+        }
+        .weather-info {
+            display: flex;
+            .air-quality {
+                display: flex;
+                > span {
+                    width: 80px;
+                    height:25px;
+                    text-align: center;
+                    line-height: 25px;
+                    color: #fff;
+                    background: rgba(0,0,0,0.5);
+                    &.air-quality-result {
+                        background: rgba(40, 167, 69,0.5);
+                    }
+                }
+            }
+            .wind-info{
+                padding-left: 20px;
+                >img {
+                    margin-right: 5px;
+                }
+                >span {
+                    font-size: 12px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .future-weather-info-list {
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        .future-weather-info-item {
+            width: 25%;
+            background: rgba(204,0,0,0.5);
+            text-align: center;
+            padding-top: 18px;
+            padding-bottom: 16px;
+            img {
+                margin-bottom: 10px;
+            }
+            p {
+                color: #fff;
+                font-size: 23px;
+                margin-bottom: 0;
+                &.max-temperature {
+                    margin-bottom: 10px;
+                }
+            }
+            .vertical-line {
+                width: 2px;
+                height: 41px;
+                background:rgba(255,255,255,0.5);
+                margin: 12px auto;
+            }
+        }
+    }
+}
